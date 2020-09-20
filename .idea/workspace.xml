@@ -7,6 +7,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -19,9 +26,35 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pygame_by_dafluffy_potato" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\minhn\Desktop\DUNGEON_EXPLORER" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="animation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DUNGEON_EXPLORER" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/animation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DUNGEON_EXPLORER" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -46,6 +79,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.animation" />
       </list>
     </recent_temporary>
   </component>
@@ -67,29 +101,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600378080301" />
+    <state x="728" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600591693255">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="728" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600591693255" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600388296932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600388296932" />
-    <state width="1899" height="469" key="GridCell.Tab.0.bottom" timestamp="1600389630136">
+    <state width="1899" height="338" key="GridCell.Tab.0.bottom" timestamp="1600646117556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="469" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600389630136" />
-    <state width="1899" height="469" key="GridCell.Tab.0.center" timestamp="1600389630136">
+    <state width="1899" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.0.center" timestamp="1600646117556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="469" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600389630136" />
-    <state width="1899" height="469" key="GridCell.Tab.0.left" timestamp="1600389630136">
+    <state width="1899" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.0.left" timestamp="1600646117556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="469" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600389630136" />
-    <state width="1899" height="469" key="GridCell.Tab.0.right" timestamp="1600389630136">
+    <state width="1899" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.0.right" timestamp="1600646117556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="469" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600389630136" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600388275864">
+    <state width="1899" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.1.bottom" timestamp="1600646117556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600388275864" />
+    <state width="1899" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.1.center" timestamp="1600646117556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.1.left" timestamp="1600646117556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state width="1899" height="338" key="GridCell.Tab.1.right" timestamp="1600646117556">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600646117556" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600645349531">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600645349531" />
   </component>
 </project>
