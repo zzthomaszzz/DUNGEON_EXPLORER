@@ -12,6 +12,7 @@ window_size = (1280, 720)
 display_size = (480, 360)
 clock = pygame.time.Clock()
 background = pygame.image.load('background_red.png')
+image_okay = 0
 
 
 class Player:
@@ -20,7 +21,8 @@ class Player:
         self.y = y
         self.width = width
         self.height = height
-        self.walking = True
+        self.walking = False
+        self.standing = False
         self.action = False
         self.m_left = False
         self.m_right = False
@@ -59,14 +61,14 @@ class Player:
             self.action = False
 
 
-def do_animation_1(surface, animation, coordinate_and_size, tick_count, tick, restart, image_1):
+def do_animation_1(surface, animation, coordinate_and_size, tick_count, tick, restart):
+    global image_okay
     if tick_count == tick:
-        image_1 += 1
+        image_okay += 1
         tick_count = 0
-    if image_1 == len(animation) or restart:
-        print(restart)
-        image_1 = 0
-    surface.blit(animation[image_1], coordinate_and_size)
+    if image_okay == len(animation) or restart:
+        image_okay = 0
+    surface.blit(animation[image_okay], coordinate_and_size)
     tick_count += 1
     return tick_count
 
@@ -131,7 +133,11 @@ while True:
         player.y -= (player.vel + player.run)
 
     player.rect = pygame.Rect(int(player.x), int(player.y), player.width, player.height)
-    player.tick = do_animation_1(display, player.image, player.coor, player.tick, 50, False, player.okay)
+    player.coor = (player.x, player.y, player.width, player.height)
+    if player.m_right:
+        player.tick = do_animation_1(display, player.image, player.coor, player.tick, 5, False)
+    else:
+        display.blit(pygame.image.load('testing_run.png'), player.coor)
     screen.blit(pygame.transform.scale(display, window_size), (0, 0))
     pygame.display.update()
     clock.tick(60)
