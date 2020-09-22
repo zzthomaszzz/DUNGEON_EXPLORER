@@ -1,7 +1,7 @@
 import pygame
 
 
-def load_animation(path, tick_count=0):
+def load_animation(path):
     image_list = []
     n = 1
     loop = True
@@ -11,21 +11,13 @@ def load_animation(path, tick_count=0):
             n += 1
         except pygame.error:
             break
-    return image_list, tick_count
+    return image_list
 
 
-def do_animation(surface, animation, coordinate_and_size, tick_count, tick, restart, image):
-    if tick_count == tick:
-        image += 1
-        tick_count = 0
-    if image == len(animation) or restart:
-        print(restart)
-        image = 0
-    surface.blit(animation[image], coordinate_and_size)
-    tick_count += 1
-    print(tick_count)
-    print(image)
-    return tick_count
+
+
+
+
 
 
 

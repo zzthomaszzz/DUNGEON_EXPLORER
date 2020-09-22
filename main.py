@@ -1,64 +1,19 @@
+import pygame, sys
+from pygame import *
+from animation import *
+from player_class import Player
 # Name: DUNGEON EXPLORER
 """Story line: You are a dungeon explorer, find the way out before it's too late"""
 '''Mechanics: Dashing, Attacking and Looting and Equipping'''
 '''Map: 5 rooms per map'''
 
 # Variables name
-import pygame, sys
-from pygame import *
-from animation import *
 pygame.init()
 window_size = (1280, 720)
 display_size = (480, 360)
 clock = pygame.time.Clock()
 background = pygame.image.load('background_red.png')
 image_okay = 0
-
-
-class Player:
-    def __init__(self, x, y, width, height, velocity, run=0):
-        self.x = x
-        self.y = y
-        self.width = width
-        self.height = height
-        self.walking = False
-        self.standing = False
-        self.action = False
-        self.m_left = False
-        self.m_right = False
-        self.m_up = False
-        self.m_down = False
-        self.vel = velocity
-        self.run = run
-        self.run_1 = self.run
-        self.running = False
-        self.q_cool_down = 600
-        self.q_up = True
-        self.q_duration = 300
-        self.q_tick = 0
-        self.coor = (self.x, self.y, self.width, self.height)
-        self.rect = pygame.Rect(int(self.x), int(self.y), self.width, self.y)
-        self.image, self.tick = load_animation("Data/image/walking")
-        self.okay = 0
-
-    def check_buff(self):
-        if self.running:
-            self.q_tick += 1
-            if self.q_tick != self.q_duration:
-                self.run = self.run_1
-                self.action = True
-                self.q_up = False
-            else:
-                self.running = False
-                self.q_tick = 0
-        else:
-            if not self.q_up:
-                self.q_tick += 1
-                if self.q_tick == self.q_cool_down:
-                    self.q_up = True
-                    self.q_tick = 0
-            self.run = 0
-            self.action = False
 
 
 def do_animation_1(surface, animation, coordinate_and_size, tick_count, tick, restart):
@@ -73,9 +28,7 @@ def do_animation_1(surface, animation, coordinate_and_size, tick_count, tick, re
     return tick_count
 
 
-player = Player(50, 100, 20, 20, 1, 3)
-bot, bot_tick = load_animation("testing_run")
-bot_location = (400, 50, 20, 20)
+player = Player(50, 100, 20, 20, 10)
 
 screen = pygame.display.set_mode(window_size, pygame.FULLSCREEN, 32)
 display = pygame.Surface(display_size)
@@ -107,10 +60,12 @@ while True:
                 player.m_up = True
             if event.key == K_LEFT:
                 player.m_left = True
+                player.face_left = True
+                player.face_right = False
             if event.key == K_RIGHT:
                 player.m_right = True
-            if event.key == K_q and player.q_up:
-                player.running = True
+                player.face_left = False
+                player.face_right = True
 
         if event.type == pygame.KEYUP:
             if event.key == K_DOWN:
@@ -119,25 +74,36 @@ while True:
                 player.m_up = False
             if event.key == K_LEFT:
                 player.m_left = False
+                player.walk_left[3] = 0
+                player.walk_left[2] = 0
             if event.key == K_RIGHT:
                 player.m_right = False
-    player.check_buff()
-
-    if player.m_right:
-        player.x += (player.vel + player.run)
-    if player.m_left:
-        player.x -= (player.vel + player.run)
-    if player.m_down:
-        player.y += (player.vel + player.run)
-    if player.m_up:
-        player.y -= (player.vel + player.run)
-
-    player.rect = pygame.Rect(int(player.x), int(player.y), player.width, player.height)
-    player.coor = (player.x, player.y, player.width, player.height)
-    if player.m_right:
-        player.tick = do_animation_1(display, player.image, player.coor, player.tick, 5, False)
+                player.walk_right[3] = 0
+                player.walk_right[2] = 0
+    player.rect = pygame.Rect(player.x, player.y, player.width, player.height)
+    if not player.m_left and not player.m_right:
+        if player.face_right:
+            player.animate(display, player.stand_right)
+        if player.face_left:
+            player.animate(display, player.stand_left)
     else:
-        display.blit(pygame.image.load('testing_run.png'), player.coor)
+        if player.m_right and player.m_left:
+            if player.face_left and not player.face_right:
+                player.animate(display, player.stand_right)
+            if player.face_right and not player.face_left:
+                player.animate(display, player.stand_left)
+        else:
+            if player.m_right:
+                player.animate(display, player.walk_right)
+                player.x += 2
+            if player.m_left:
+                player.animate(display, player.walk_left)
+                player.x -= 2
+    if player.m_up:
+        player.y -= 2
+    if player.m_down:
+        player.y += 2
+
     screen.blit(pygame.transform.scale(display, window_size), (0, 0))
     pygame.display.update()
     clock.tick(60)
