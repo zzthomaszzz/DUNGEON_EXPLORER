@@ -26,7 +26,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Pygame_by_dafluffy_potato" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -127,26 +127,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="728" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600591693255" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600652132817">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600799095501">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600652132817" />
-    <state width="1899" height="119" key="GridCell.Tab.0.bottom" timestamp="1600738630434">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600799095501" />
+    <state width="1899" height="119" key="GridCell.Tab.0.bottom" timestamp="1600758555197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600738630434" />
-    <state width="1899" height="119" key="GridCell.Tab.0.center" timestamp="1600738630434">
+    <state width="1899" height="119" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600758555197" />
+    <state width="1899" height="119" key="GridCell.Tab.0.center" timestamp="1600758555197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="119" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600738630434" />
-    <state width="1899" height="119" key="GridCell.Tab.0.left" timestamp="1600738630434">
+    <state width="1899" height="119" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600758555197" />
+    <state width="1899" height="119" key="GridCell.Tab.0.left" timestamp="1600758555197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="119" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600738630434" />
-    <state width="1899" height="119" key="GridCell.Tab.0.right" timestamp="1600738630434">
+    <state width="1899" height="119" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600758555197" />
+    <state width="1899" height="119" key="GridCell.Tab.0.right" timestamp="1600758555197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="119" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600738630434" />
+    <state width="1899" height="119" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600758555197" />
     <state width="1899" height="338" key="GridCell.Tab.1.bottom" timestamp="1600733813843">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -163,9 +163,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600733813843" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600732840261">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600799080260">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600732840261" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600799080260" />
   </component>
 </project>
